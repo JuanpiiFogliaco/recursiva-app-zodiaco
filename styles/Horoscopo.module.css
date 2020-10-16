@@ -4,6 +4,7 @@
     align-items: center;
     height:100vh;
     width: 100%;
+    padding: 2%;
 }
 
 .userTitle{
@@ -17,7 +18,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3%;
+    padding: 1%;
+}
+
+.iconSigno > img {
+    width: 95%;
 }
 
 .dataHoroscopo{

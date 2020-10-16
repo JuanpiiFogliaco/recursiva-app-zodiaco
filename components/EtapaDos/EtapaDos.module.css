@@ -13,8 +13,8 @@
     align-items: center;
     width: 100%;
     max-width: 600px;
-    min-width: 400px;
-    padding: 5%;
+    min-width: 300px;
+    padding: 6%;
 }
 
 .contenedorImagen{
@@ -37,6 +37,8 @@
 
 .grupo > input{
     border:none;
+    background: whitesmoke;
+    border-radius: 7px ;
     width: 50%;
     height: 35px;
     text-align: start;

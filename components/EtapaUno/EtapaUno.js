@@ -1,6 +1,7 @@
 import style from "./EtapaUno.module.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import {parseNumToGenero} from '../../utils/index';
 
 export default function EtapaUno({ btnHome }) {
   const [genero, setGenero] = useState([]);
@@ -18,13 +19,13 @@ export default function EtapaUno({ btnHome }) {
     const estadoGenero = e.target.name;
     switch (estadoGenero) {
       case "1":
-        setGenero(estadoGenero);
+        setGenero((estadoGenero));
         break;
       case "2":
-        setGenero(estadoGenero);
+        setGenero((estadoGenero));
         break;
       case "3":
-        setGenero(estadoGenero);
+        setGenero((estadoGenero));
         break;
       default:
         alert("default");
@@ -68,7 +69,7 @@ export default function EtapaUno({ btnHome }) {
             />
           </div>
           <div className={style.notificacionGenero}>
-            {genero > 0 ? "Genero Seleccionado: " + genero : ""}
+            {genero > 0 ? "Genero Seleccionado: " + parseNumToGenero(genero) : ""}
           </div>
           <div className={style.notificacion}>
             {avisoEstado && genero === 0

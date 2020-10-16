@@ -30,7 +30,15 @@ Abrir [http://localhost:3000](http://localhost:3000) en el navegador para ver lo
  `services/`         -> Se consume la data del endpoint con axios.
  `styles/`           -> Estilos de la aplicacion (CSS)
 
+ ## Deploy Aplicacion 
  
+  https://app-zodiaco.vercel.app/
+
+
+
+
+
+
 
   
  

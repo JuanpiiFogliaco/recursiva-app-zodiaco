@@ -98,3 +98,11 @@ export const calcularCumpleaños = (fechaUsuario) => {
 
   return Math.ceil((fechaCumple.getTime() - today.getTime()) / one_day);
 };
+
+export const parseNumToGenero = (numero) => {
+    switch(numero){
+        case '1': return 'Masculino';
+        case '2': return 'No Binaries';
+        case '3': return 'Femenino'
+    }
+}

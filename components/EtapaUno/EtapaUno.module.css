@@ -23,13 +23,27 @@
     justify-content: center;
     align-items: center;
     width:100%;
+    padding: 3%;
  }
  .imgGenero{
      width:150px;
      height:150px;
      cursor: pointer;
+     border-radius: 25px;
+ }
+
+ @media(max-width: 500px){
+     .imgGenero{
+         width: 100px;
+         height: 100px;
+     }
  }
  
+ .imgGenero:hover{
+    background: whitesmoke;
+}
+
+
  .notificacionGenero{
      text-align: center;
      color: #0e5090 ;
@@ -38,14 +52,14 @@
  .notificacion{
      text-align: center;
      color: red; 
-     padding: 2%;
+    
  }
 
  .contenedorBtnDatos{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1%;
+    padding: 2%;
  }
 
  .btnDatos{
