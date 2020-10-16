@@ -1,0 +1,81 @@
+.contenedorEtapaDos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0e5090;
+    width: 100%;
+    height: 80vh; 
+}
+
+.etapaDos{
+    color: #0e5090;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px;
+    padding: 5%;
+}
+
+.contenedorImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloEtapaDos{
+    text-align: center;
+}
+
+
+.grupo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.grupo > input{
+    border:none;
+    width: 50%;
+    height: 35px;
+    text-align: start;
+}
+
+.grupo > input[type=date]{
+    width: 50%;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botones > .naranja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background: #fe6d1a;
+    border-radius: 22px;
+    box-shadow: 2px 2px 2px #121212;
+    padding: 2%;
+}
+
+.botones > .azul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background:  #0e5090;
+    border-radius: 22px;
+    box-shadow: 2px 2px 2px #121212;
+    padding: 2%;
+}

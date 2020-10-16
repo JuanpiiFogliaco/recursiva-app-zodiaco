@@ -1,0 +1,63 @@
+.contenedorEtapaUno{
+   width: 100%;
+}
+
+.etapaUno{
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    color: #0e5090;
+}
+
+.generos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+ }
+ .imgGenero{
+     width:150px;
+     height:150px;
+     cursor: pointer;
+ }
+ 
+ .notificacionGenero{
+     text-align: center;
+     color: #0e5090 ;
+ }
+
+ .notificacion{
+     text-align: center;
+     color: red; 
+     padding: 2%;
+ }
+
+ .contenedorBtnDatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+ }
+
+ .btnDatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    color: white;
+    background: #fe6d1a;
+    border-radius: 22px;
+    box-shadow: 2px 2px 2px #121212;
+ }
+

@@ -1,0 +1,19 @@
+.contenedorBotonHome{
+   padding: 12%;
+   width: 100%;
+}
+
+.botonHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    color: white;
+    background: #fe6d1a;
+    border-radius: 22px;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px #121212;
+}
+

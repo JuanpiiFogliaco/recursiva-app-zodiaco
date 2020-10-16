@@ -1,0 +1,50 @@
+.contenedorHoroscopo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    width: 100%;
+}
+
+.userTitle{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.iconSigno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.dataHoroscopo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    height: auto;
+}
+
+.contenedorBtnContinuar{
+    padding:5%;
+    width: 75%;
+ }
+ 
+ .btnContinuar{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     height: 40px;
+     width: 100%;
+     color: white;
+     background: #fe6d1a;
+     border-radius: 22px;
+     font-size: 15px;
+     box-shadow: 2px 2px 2px #121212;
+ }
+ 

@@ -1,0 +1,18 @@
+.contenedorNavegador{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0e5090;
+    color:white;
+    padding:7px;
+}
+
+.volverHome{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.volverHome:hover{
+    opacity: 0.7;
+}
