@@ -51,33 +51,6 @@ export const obtenerSignoUsuario = (fechas, fechaUsuario) => {
   return signo;
 };
 
-export const calcularCumpleaño = (fechaNacimiento) => {
-  let arrFecha = fechaNacimiento.split("-");
-  let hoy = new Date();
-
-  let fechaCumpleaños = new Date(
-    calcularAño(hoy, fechaNacimiento),
-    Number.parseInt(arrFecha[1]) - 1,
-    Number.parseInt(arrFecha[2])
-  );
-
-  let milisegundosDia = 1000 * 60 * 60 * 24;
-
-  let cantidadDias = Math.ceil(
-    (fechaCumpleaños.getTime() - hoy.getTime()) / milisegundosDia
-  );
-
-  return cantidadDias;
-};
-
-export const calcularAño = (hoy, fechaNacimiento) => {
-  let fechaNacimientoDate = new Date(fechaNacimiento);
-
-  if (fechaNacimientoDate < hoy) {
-    return 2020;
-  }
-};
-
 export const calcularCumpleaños = (fechaUsuario) => {
   var one_day = 1000 * 60 * 60 * 24;
   let today = new Date();
@@ -87,15 +60,16 @@ export const calcularCumpleaños = (fechaUsuario) => {
     fechaUsuario.getMonth(),
     fechaUsuario.getDate()
   );
-  if (
-    today.getMonth() > fechaCumple.getMonth() ||
-    (today.getMonth() == fechaCumple.getMonth() &&
-      today.getDate() > fechaCumple.getDate())
-  ) {
+  if (  
+    (today.getMonth()<= fechaCumple.getMonth()) ||
+    (today.getMonth() >= fechaCumple.getMonth())|| 
+    (today.getMonth() == fechaCumple.getMonth() && 
+      today.getDate() >= fechaCumple.getDate())   
+    )  
+  {
     fechaCumple.setFullYear(fechaCumple.getFullYear() + 1);
     return Math.ceil((fechaCumple.getTime() - today.getTime()) / one_day);
   }
-
   return Math.ceil((fechaCumple.getTime() - today.getTime()) / one_day);
 };
 

@@ -27,7 +27,7 @@ const Horoscopo = ({ signo, nombre, nacimiento }) => {
       })
       .finally(() => setIsLoading(false));
   }, []);
-  
+  console.log(signos)
   const loading = isLoading ? (
     <Loader
       type="Puff"
